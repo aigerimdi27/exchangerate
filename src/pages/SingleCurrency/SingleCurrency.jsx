@@ -20,7 +20,9 @@ const SingleCurrency = () => {
                                 </div>
 
                                 <div className="currency__amount">1.00</div>
-                                <button className="currency__btn change">Change</button>
+                                <div className="currency__action">
+                                    <button className="currency__btn change">Change</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -32,12 +34,14 @@ const SingleCurrency = () => {
                                 <div className="currency__full">Euro</div>
                             </div>
                             <div className="currency__amount">2.00</div>
-                            <button className="currency__btn remove">Remove</button>
+                            <div className="currency__action">
+                                <button className="currency__btn remove">Remove</button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div className="currency__add">
+                <div className="currency__add active">
                     <button className="currency__add__btn">Add currency</button>
 
                     <select className="select" id="addCurrency">

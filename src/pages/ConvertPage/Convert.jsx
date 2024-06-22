@@ -62,7 +62,7 @@ const Convert = () => {
                         <span></span>
                     </div>
 
-                    <div className="form__results">
+                    <div className="form__results shown">
                         <div className="form__result from" id='resultFrom'>
                             <div className="form__result__icon">
                                 <img src={downArrow} alt="" />

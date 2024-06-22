@@ -1,0 +1,96 @@
+.currency {
+    &__wrapper {
+        margin-top: 40px;
+    }
+    &__item {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        border-radius: 12px;
+        padding: 12px 20px;
+        border: 2px solid #fa5897;
+        background: none;
+        &.current {
+            border: none;
+            background-color: #879fff;
+        }
+    }
+    &__titles {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 20px;
+        font-weight: 600;
+        line-height: 19px;
+        color: #f5f5f5;
+    }
+    &__full {
+        color: #2b2440;
+    }
+    &__amount {
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 12px;
+    }
+    &__single {
+        position: relative;
+        &__item {
+            height: 69px;
+
+        }
+    }
+    &__action {
+        text-align: right;
+    }
+    &__btn {
+        border: 1px solid #fff;
+        opacity: 0.5;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 10px 23px;
+        transition: 0.25s;
+        cursor: pointer;
+        &:hover {
+            color: #fff;
+            opacity: 1;
+        }
+    }
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+   }
+   &__add {
+        display: flex;
+        justify-content: end;
+        margin-top: 20px;
+        &__btn {
+            background-color: rgb(250, 60, 120);
+            border-radius: 12px;
+            font-size: 17px;
+            line-height: 21px;
+            color: #fff;
+            padding: 12px 30px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .select {
+            display: none;
+            padding: 11px 14px;
+        }
+        &.active {
+            .select {
+                display: block;
+            }
+            .currency__add__btn {
+                display: none;
+            }
+        }
+   }
+
+}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Tabs.scss'
 import convertIcon from '../../assets/images/convertpageicon.svg'
 import singleIcon from '../../assets/images/singlepageicon.svg'
@@ -7,17 +7,18 @@ export const Tabs = () => {
     return (
         <>
             <div className="tabs">
-                <div className="tab active">
+                <div className="tab
+                ">
                     <div className="tab__icon">
                         <img src={convertIcon} alt="" />
                     </div>
-                    <Link to="/" className="tab__title">Convert</Link>
+                    <NavLink to="/" className="tab__link">Convert</NavLink>
                 </div>
                 <div className="tab">
                     <div className="tab__icon">
                         <img src={singleIcon} alt="" />
                     </div>
-                    <Link to="/single" className="tab__title">Single</Link>
+                    <NavLink to="/single" className="tab__link">Single</NavLink>
                 </div>
             </div>
         </>
