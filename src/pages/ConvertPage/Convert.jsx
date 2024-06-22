@@ -8,7 +8,7 @@ const Convert = () => {
     return (
         <>
           <div className="content">
-            <form>
+            <form className='form'>
                 <div className="form__inputs">
                     <div className="form__amount">
                         <label htmlFor="amount">Amount</label>

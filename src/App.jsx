@@ -1,5 +1,7 @@
+import { Route, Routes } from 'react-router-dom'
 import { Tabs } from './components/Tabs/Tabs'
-import Convert from './pages/ConvertPage/Convert'
+import { Convert } from './pages/ConvertPage'
+import { SingleCurrency } from './pages/SingleCurrency'
 
 export const App = () => {
 
@@ -14,7 +16,10 @@ export const App = () => {
             <div className="wrapper">
 
               <Tabs/>
-              <Convert/>
+              <Routes>
+                <Route path="/" element={<Convert/>}/>
+                <Route path="/single" element={<SingleCurrency/>}/>
+              </Routes>
 
             </div>
           </div>
